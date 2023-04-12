@@ -4,14 +4,99 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .wufoo{
-            font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif
+        td{
+
         }
     </style>
 </head>
 <body>
-<form method="get" action="simpleform.html" class="wufoo">
-    <h4 >Market Research Survey</h4>
-
+<form >
+    <b>Market Research Survey</b>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+    <hr>
+    <ul>
+        <li>
+            <span>What is your age range?</span><br>
+            <select>
+                <option>18-24</option>
+                <option>25-34</option>
+                <option>34-50</option>
+                <option>50+</option>
+            </select>
+        </li>
+        <li>
+        <label>What is your yearly income range?</label><br>
+        <select>
+            <option>$0 - $25,000</option>
+            <option>$25,001 - 50,000</option>
+            <option>$50,001 - 100,000</option>
+            <option>100,000+</option>
+        </select>
+        </li>
+        <li>
+            <label>Gender identity</label><br>
+            <input type="radio" name="Gender">Male
+            <input type="radio" name="Gender">Female
+            <input type="radio" name="Gender">Nonbinary
+            <input type="radio" name="Gender">Other<br>
+            <input type="text" name="">
+        </li>
+        <li>
+            <label>Which of the following products have your purchased in the last 2 months. Please check all that apply.</label><br>
+            <input type="checkbox" name="Product1">Product1
+            <input type="checkbox" name="Product2">Product2
+            <input type="checkbox" name="Product3">Product3
+        </li>
+        <li>
+            <label>How often would you use our new product?</label><br>
+            <input type="radio" name="Daily">Daily
+            <input type="radio" name="Weekly">Weekly
+            <input type="radio" name="Monthly">Monthly
+        </li>
+        <li>
+            <label>What would you pay for the new product?</label><br>
+            $<input type="text" size="5">.<input type="text" size="1"><br>
+            <span style="margin-left: 5px; font-size: 12px">Dollars</span><span style="margin-left: 50px; font-size: 12px">Cents</span>
+        </li>
+        <li>
+            <label>What features would you like to see in the new product.</label><br>
+            <textarea rows="5" cols="100"></textarea>
+        </li>
+        <li>
+            <label>Please rate your level of agreement with the following statements.</label>
+            <table border="" style="border-collapse: collapse;border-bottom: 1px solid #dedede;">
+                <tr>
+                    <th style="background:#e6e6e6" ></th>
+                    <th style="background:#e6e6e6">Strongly Disagree</th>
+                    <th style="background:#e6e6e6">Disagree</th>
+                    <th style="background:#e6e6e6">Agree</th>
+                    <th style="background:#e6e6e6">Strongly Agree</th>
+                </tr>
+                <tr>
+                    <td>Our products are priced fairly.</td>
+                    <td style="text-align: center"><input type="radio" name="number" checked><br>1</td>
+                    <td style="text-align: center"><input type="radio" name="number" checked><br>2</td>
+                    <td style="text-align: center"><input type="radio" name="number" checked><br>3</td>
+                    <td style="text-align: center"><input type="radio" name="number" checked><br>4</td>
+                </tr>
+                <tr>
+                    <td>Our products are high quality.</td>
+                    <td style="text-align: center"><input type="radio" name="number" checked>><br>1</td>
+                    <td style="text-align: center"><input type="radio" name="number" checked>><br>2</td>
+                    <td style="text-align: center"><input type="radio" name="number" checked>><br>3</td>
+                    <td style="text-align: center"><input type="radio" name="number" checked>><br>4</td>
+                </tr>
+                <tr>
+                    <td>You would recommend our product to a friend or coworker.</td>
+                    <td style="text-align: center"><input type="radio" name="number" checked>><br>1</td>
+                    <td style="text-align: center"><input type="radio" name="number" checked>><br>2</td>
+                    <td style="text-align: center"><input type="radio" name="number" checked>><br>3</td>
+                    <td style="text-align: center"><input type="radio" name="number" checked>><br>4</td>
+                </tr>
+            </table>
+            <input type="button" value="submit">
+        </li>
+    </ul>
+</form>
 </body>
 </html>
