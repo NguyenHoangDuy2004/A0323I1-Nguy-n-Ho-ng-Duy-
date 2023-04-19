@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap">
+
+<select id="select1">
+    <option value="23000">Vietnam</option>
+    <option value="1">USA</option>
+</select>
+<select id="select2">
+    <option value="23000">Vietnam</option>
+    <option value="1">USA</option>
+</select>
+<input type="button" value="conver" onclick="hienthi()">
+<p id = "ketqua"></p>
+
+<script>
+function hienthi(){
+    let a = document.getElementById("nhap").value;
+    let b = document.getElementById("select1").value;
+    let c = document.getElementById("select2").value;
+
+    let tong= a*c/b
+    document.getElementById("ketqua").innerHTML='ketqua: '+tong;
+}
+
+
+
+
+</script>
+</body>
+</html>

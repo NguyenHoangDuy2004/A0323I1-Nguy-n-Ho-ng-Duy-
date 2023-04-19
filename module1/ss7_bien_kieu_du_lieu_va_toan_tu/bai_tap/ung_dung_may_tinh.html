@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="t1">
+<input type="text" id="t2">
+<input type="button" onclick="cong()" value="+">
+<input type="button" onclick="tru()" value="-">
+<input type="button" onclick="nhan()" value="*">
+<input type="button" onclick="chia()" value="/">
+<p id="hienthi"></p>
+<script>
+function cong() {
+let a= document.getElementById("t1").value;
+let b= document.getElementById("t2").value;
+    let c= parseFloat(a)+parseFloat(b) ;
+document.getElementById("hienthi").innerText = c;
+
+
+}
+function tru() {
+    let a= document.getElementById("t1").value;
+    let b= document.getElementById("t2").value;
+    let c= parseFloat(a)-parseFloat(b) ;
+    document.getElementById("hienthi").innerText = c;
+
+}
+function nhan() {
+    let a= document.getElementById("t1").value;
+    let b= document.getElementById("t2").value;
+    let c= parseFloat(a)*parseFloat(b) ;
+    document.getElementById("hienthi").innerText = c;
+
+}
+function chia() {
+    let a= document.getElementById("t1").value;
+    let b= document.getElementById("t2").value;
+    let c= parseFloat(a)/parseFloat(b) ;
+    document.getElementById("hienthi").innerText = c;
+
+}
+</script>
+</body>
+</html>
