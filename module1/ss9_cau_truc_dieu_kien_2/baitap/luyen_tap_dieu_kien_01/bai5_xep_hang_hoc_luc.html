@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemBaiKiemTra = +prompt("nhập điểm bài kiểm tra")
+    let diemThiGiuaKy = +prompt("nhập điểm thi giữa kỳ")
+    let diemThiCuoiKi = +prompt("nhập điểm thi cuối kỳ")
+    if (diemBaiKiemTra && diemThiGiuaKy && diemThiCuoiKi == 10 ){
+        alert("học lực xuất sắc ")
+    }else
+    if (diemBaiKiemTra && diemThiGiuaKy && diemThiCuoiKi >= 8){
+            alert("học lực tốt")
+        }
+    else if(diemBaiKiemTra && diemThiGiuaKy && diemThiCuoiKi >= 6) {
+            alert("học lực khá ")
+    }else {
+        alert("học lực trung bình yếu")
+    }
+</script>
+</body>
+</html>

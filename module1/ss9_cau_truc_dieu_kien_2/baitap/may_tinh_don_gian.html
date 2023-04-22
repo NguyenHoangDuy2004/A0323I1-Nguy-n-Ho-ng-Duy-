@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap"><br>
+<input type="button" onclick="typing(1)" value="1">
+<input type="button" onclick="typing(2)" value="2">
+<input type="button" onclick="typing(3)" value="3">
+<input type="button" onclick="cong()" value="+"><br>
+<input type="button" onclick="typing(4)" value="4">
+<input type="button" onclick="typing(5)" value="5">
+<input type="button" onclick="typing(6)" value="6">
+<input type="button" onclick="tru()" value="-"><br>
+<input type="button" onclick="typing(7)" value="7">
+<input type="button" onclick="typing(8)" value="8">
+<input type="button" onclick="typing(9)" value="9">
+<input type="button" onclick="nhan()" value="*"><br>
+<input type="button" onclick="C()" value="C">
+<input type="button" onclick="typing(0)" value="0">
+<input type="button" onclick="bang()" value="=">
+<input type="button" onclick="chia()" value="/">
+
+<script>
+    function typing(input){
+        document.getElementById("nhap").value += input
+    }
+    function  cong() {
+        document.getElementById("nhap").value += "+";
+    }
+    function  tru() {
+        document.getElementById("nhap").value += "-";
+    }
+    function  chia() {
+        document.getElementById("nhap").value += "/";
+    }
+    function  nhan() {
+        document.getElementById("nhap").value += "*";
+    }
+    function C() {
+        document.getElementById("nhap").value = "";
+    }
+    function bang() {
+     let tinhtoan = document.getElementById('nhap').value;
+     let a = eval(tinhtoan) ;
+     document.getElementById('nhap').value = a;
+    }
+
+</script>
+</body>
+</html>
