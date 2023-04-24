@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhập số tiền đã vay")
+    let b = +prompt("nhập số năm")
+
+    if (b <=3){
+        alert("số tiền phải trả hàng tháng là  "+ (a/(b*12))+(a*0.08/(100*12)))
+    }else if (b>3){
+        alert("số tiền phải trả hàng tháng là  "+ (a/(b*12))+(a*0.1/(100*12)))
+}
+</script>
+</body>
+</html>
