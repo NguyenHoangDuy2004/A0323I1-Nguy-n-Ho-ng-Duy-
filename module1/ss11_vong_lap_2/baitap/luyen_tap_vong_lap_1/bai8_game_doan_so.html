@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" onclick="play()" value="Chơi">
+<script>
+    function play(){
+        let a
+        let random = Math.floor(Math.random()*10);
+        do {
+            a = +prompt("nhập vào đây 1 số bất kì")
+
+            if (a > random){
+                alert("nhập số bé hơn")
+            }else if (a<random){
+                alert("nhập số lớn hơn")
+            }else {
+                alert("bạn đã nhập đúng")
+                break;
+            }
+
+        }while (a > random || a < random)
+    }
+
+</script>
+</body>
+</html>
