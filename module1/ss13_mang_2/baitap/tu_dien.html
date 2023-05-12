@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="word" placeholder="Enter word">
+<button onclick="search()">Search</button>
+<p id="result"></p>
+<script>
+        function search() {
+            let word = document.getElementById("word").value;
+            let english    = ["Hello"    , "Goodbye"  , "Thanks" , "Nice"    , "No"]
+            let vietnamese = ["Xin chào" , "Tạm biệt" , "Cảm ơn" , "Tốt lắm" , "Không"]
+            let result = "";
+            let index = -1;
+            index = english.indexOf(word);
+            for (let i = 0; i < english.length; i++) {
+                if (english[i] == word) {
+                    index = i;
+                    break;
+                }
+            }
+            if (index != -1) {
+                result = vietnamese[index];
+            } else {
+                result = "không tìm thấy"
+            }
+
+            document.getElementById("result").innerText = result;
+
+        }
+</script>
+</body>
+</html>

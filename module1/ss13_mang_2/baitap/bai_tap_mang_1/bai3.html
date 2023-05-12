@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soNguyen= []
+    let tong = 0
+    let max  = 0
+    for (let i = 0; i < 5 ; i++) {
+        soNguyen[i] = +prompt("nhập vào 1 số bất kì")
+        if (soNguyen[i] >= max){
+            max = soNguyen[i]
+        }
+    tong += soNguyen[i]
+    }document.write("giá trị lớn nhất là "+ max + "<br>" + "giá trị trung bình là " + tong/5 )
+</script>
+
+</body>
+</html>

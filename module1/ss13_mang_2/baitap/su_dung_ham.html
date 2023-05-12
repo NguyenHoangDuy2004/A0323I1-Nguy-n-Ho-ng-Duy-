@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // // bài 1
+    // let color = ["Red" , "Green" , "White" , "Black"]
+    // document.write(('\"')+color.join()+('\"'));
+
+    //Bài 2
+    // let number = prompt("nhap");
+    // let str=number;
+    // let arr =[str[0]];
+    // for (let i = 1; i < str.length ; i++) {
+    //     if (number[i] % 2 == 0 && number[i-1]%2 == 0){
+    //         arr.push("-",str[i])
+    //     }else {
+    //         arr.push(str[i])
+    //     }
+    // }document.write(arr);
+
+    //bài 3
+    let arr   = prompt().split("")
+    let upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    let lower = "abcdefghijklmnopqrstuvwxyz"
+    for (let i = 0; i < arr.length ; i++) {
+        {
+            if(upper.indexOf(arr[i]) !== -1)
+            {
+                arr[i] = arr[i].toLowerCase();
+            }
+            else if(lower.indexOf(arr[i]) !== -1)
+            {
+                arr[i] = arr[i].toUpperCase();
+            }
+
+    }
+    }document.write(arr.join(""))
+
+
+
+
+</script>
+</body>
+</html>

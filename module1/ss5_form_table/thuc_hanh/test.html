@@ -9,11 +9,18 @@
 <p id="demo"></p>
 
 <script>
-    var x = myFunction( );
-    document.getElementById("demo").innerHTML = x;
+    let arr =[
+        [4,3,6],
+        [7,11,4],
+        [24,6,8]
+    ]
 
-    function myFunction(a, b) {
-        return a * b;
+
+    for (let i = 0; i <arr.length ; i++) {
+        for (let j = 0; j <arr[i].length ; j++) {
+            document.write(arr[i][j] + ",");
+        }
+        document.write("<br>");
     }
 </script>
 
