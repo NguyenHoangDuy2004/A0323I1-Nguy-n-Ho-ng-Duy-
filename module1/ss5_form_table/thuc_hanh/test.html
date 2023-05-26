@@ -2,26 +2,70 @@
 <html>
 <body>
 
-<h2>JavaScript Functions</h2>
-
-<p>This example calls a function which performs a calculation and returns the result:</p>
-
-<p id="demo"></p>
-
 <script>
-    let arr =[
-        [4,3,6],
-        [7,11,4],
-        [24,6,8]
-    ]
-
-
-    for (let i = 0; i <arr.length ; i++) {
-        for (let j = 0; j <arr[i].length ; j++) {
-            document.write(arr[i][j] + ",");
+    class Apple {
+        constructor(weight = 10) {
+            this.weight = weight;
         }
-        document.write("<br>");
+
+        getWeight() {
+            return this.weight;
+        }
     }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        speak(message) {
+            console.log(`${this.name} says: ${message}`);
+        }
+
+        eatApple(apple) {
+            if (apple.getWeight() > 0) {
+                this.weight += 1;
+                apple.weight -= 1;
+                console.log(`${this.name} ate an apple.`);
+            } else {
+                console.log("There are no apples left to eat.");
+            }
+        }
+
+        checkAppleWeight(apple) {
+            console.log(`The apple weighs ${apple.getWeight()}.`);
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getGender() {
+            return this.gender;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+    }
+
+    // Tạo đối tượng Apple
+    const apple = new Apple();
+
+    // Tạo đối tượng Adam và Eva
+    const adam = new Human("Adam", "male", 70);
+    const eva = new Human("Eva", "female", 60);
+
+    // Adam và Eva ăn táo cho đến khi hết
+    while (apple.getWeight() > 0) {
+        adam.eatApple(apple);
+        eva.eatApple(apple);
+    }
+
+    // Kiểm tra khối lượng của táo cuối cùng
+    adam.checkAppleWeight(apple);
 </script>
 
 </body>

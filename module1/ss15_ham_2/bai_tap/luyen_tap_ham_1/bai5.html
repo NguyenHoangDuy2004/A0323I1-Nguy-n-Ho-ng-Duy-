@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" onclick="star()" value="nhập ngôi sao">
+<script>
+
+    function star() {
+        let flag  = false
+
+        let a     = prompt("nhập tên các ngôi sao ")
+        let star1 = ["Polaris"    , "Aldebaran" , "Deneb"  , "Vega" , "Altair" , "Dubhe"      , "Regulus"]
+        let star2 = ["Ursa Minor" , "Tarurus"   , "Cygnus" , "Lyra" , "Aquila" , "Ursa Major" , "Leo"    ]
+        for (let i = 0; i <star1.length ; i++) {
+            if (a === star1[i]){
+                document.write(star2[i])
+                flag = true
+                break
+            }
+        }
+        if (flag == false){
+            document.write("Không tìm thấy")
+        }
+
+    }star()
+
+</script>
+</body>
+</html>

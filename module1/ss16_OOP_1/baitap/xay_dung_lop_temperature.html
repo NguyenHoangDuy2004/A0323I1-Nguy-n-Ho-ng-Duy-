@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="changeTemperature()">change</button>
+<script>
+    class temperature{
+        constructor(doC) {
+            this.doC = doC ;
+        }
+        doF(){
+            document.write("độ F của đối tượng là " + (this.doC * 1.8 + 32 ) + "<br>")
+        }
+        doKenvin() {
+            document.write("độ KenVin của đối tượng là " + (this.doC + 273.15))
+        }
+        setdoC(doCMoi){
+            this.doC = doCMoi ;
+        }
+    }
+    function changeTemperature(){
+        let nhietDO      = +prompt("nhập độ C ")
+     temperature1.setdoC(nhietDO)
+    }
+    let nhietDO      = +prompt("nhập độ C ")
+    let temperature1 = new temperature(nhietDO)
+    temperature1.doF()
+    temperature1.doKenvin()
+</script>
+</body>
+</html>

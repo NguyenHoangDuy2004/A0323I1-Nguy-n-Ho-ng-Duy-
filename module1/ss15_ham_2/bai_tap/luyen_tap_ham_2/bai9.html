@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array  = prompt("nhập vào 1 mảng kí tự")
+    let strg   = array.toString()
+    let result = []
+    let count  = 0
+    function check() {
+        let  flag = false
+        let nhap = prompt("nhập 1 kí tự")
+            for (let i = 0; i < strg.length ; i++){
+                result.push(strg[i])
+                if (nhap === strg[i] && strg.indexOf(nhap) !== -1  ){
+                    flag = true
+                    count++
+            }else if (flag = false){
+                    document.write("kí tự này không nằm trong mảng")
+        }document.write(result + " có " + count + " ký tự ")
+        }
+
+    }check()
+</script>
+</body>
+</html>

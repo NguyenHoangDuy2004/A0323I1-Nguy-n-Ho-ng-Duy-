@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="eat()">eat</button>
+<script>
+    class Apple{
+        constructor(weight = 10) {
+            this.weight = weight
+        }
+        getweight(){
+            return this.weight
+        }
+        decrease(){
+            this.weight --
+        }
+    }
+    class Human{
+        constructor(name, gender , weight ) {
+            this.name   = name
+            this.gender = gender
+            this.weight = weight
+        }
+        say(text){
+            alert(text)
+        }
+
+        eatapple(apple){
+            if (apple.getweight()  > 0 ){
+                this.say(this.name + this.gender + this.weight + " đang ăn táo  " )
+                this.weight += 1
+                apple.decrease()
+                this.say("đã ăn xong " + this.weight )
+            }else {
+                this.say(" táo không đủ KPI nên không ăn")
+            }
+        }
+        checkapple(apple){
+            alert(" khối lượng của táo là " + apple.getweight())
+        }
+        getname(){
+            return this.name
+        }
+        getgender(){
+            return this.gender
+        }
+        getweight(){
+            return this.weight
+        }
+    }
+    let adam   = new Human("Adam" , " nam ", 70)
+    let apple1 = new Apple()
+    adam.eatapple(apple1)
+    adam.checkapple(apple1)
+    function eat() {
+        adam.eatapple(apple1)
+        adam.checkapple(apple1)
+    }
+
+
+</script>
+</body>
+</html>
