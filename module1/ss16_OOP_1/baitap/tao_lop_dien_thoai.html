@@ -7,7 +7,34 @@
 <body>
 <script>
     class Mobile{
-
+        constructor(soDienThoai){
+            this.pin =   100      ;
+            this.tinNhanDangSoan  ;
+            this.hopThuDen   = [] ;
+            this.hopThuDaGui = [] ;
+            this.trangThai = true ;
+            this.soDienThoai = soDienThoai ;
+        }
+        batDienThoai(){
+            alert("đã bật")
+            this.trangThai = true ;
+        }
+        tatDienThoai(){
+            alert("đã tắt")
+            this.trangThai = false;
+        }
+        sacPin(){
+            this.pin = 100  ;
+            alert("pin đầy")
+        }
+        soanTinNhan(){
+            this.tinNhanDangSoan = prompt ("mời bạn soạn tin nhắn : ")
+            let xacNhanGui       = confirm("bạn có muốn gửi không ? ")
+            if (xacNhanGui){
+                let soDienThoaiNguoiNhan = +prompt("hãy nhập số điện thoại bạn muốn gửi ")
+                this.guiTinNhan(this.tinNhanDangSoan , soDienThoaiNguoiNhan)
+            }
+        }
     }
 
 </script>

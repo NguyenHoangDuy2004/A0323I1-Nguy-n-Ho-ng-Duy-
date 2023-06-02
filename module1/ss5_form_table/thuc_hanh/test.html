@@ -3,69 +3,13 @@
 <body>
 
 <script>
-    class Apple {
-        constructor(weight = 10) {
-            this.weight = weight;
-        }
+    const A = [1, 2, 3, 4, 5];
+    const B = [3, 4, 5, 6, 7];
 
-        getWeight() {
-            return this.weight;
-        }
-    }
+    const result = B.filter(item => !A.includes(item));
 
-    class Human {
-        constructor(name, gender, weight) {
-            this.name = name;
-            this.gender = gender;
-            this.weight = weight;
-        }
 
-        speak(message) {
-            console.log(`${this.name} says: ${message}`);
-        }
 
-        eatApple(apple) {
-            if (apple.getWeight() > 0) {
-                this.weight += 1;
-                apple.weight -= 1;
-                console.log(`${this.name} ate an apple.`);
-            } else {
-                console.log("There are no apples left to eat.");
-            }
-        }
-
-        checkAppleWeight(apple) {
-            console.log(`The apple weighs ${apple.getWeight()}.`);
-        }
-
-        getName() {
-            return this.name;
-        }
-
-        getGender() {
-            return this.gender;
-        }
-
-        getWeight() {
-            return this.weight;
-        }
-    }
-
-    // Tạo đối tượng Apple
-    const apple = new Apple();
-
-    // Tạo đối tượng Adam và Eva
-    const adam = new Human("Adam", "male", 70);
-    const eva = new Human("Eva", "female", 60);
-
-    // Adam và Eva ăn táo cho đến khi hết
-    while (apple.getWeight() > 0) {
-        adam.eatApple(apple);
-        eva.eatApple(apple);
-    }
-
-    // Kiểm tra khối lượng của táo cuối cùng
-    adam.checkAppleWeight(apple);
 </script>
 
 </body>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let h = +prompt("nhập chiều dài tam giác ")
+    for (let i = 1; i <= h ; i++) {
+        let row = '' + "<br>"
+        for (let j = 1; j <= 2 * h - 1; j++) {
+            if (i === h || j === h - i + 1 || j === h + i - 1) {
+                row += '*'
+            } else {
+                row += '&nbsp;' + '&nbsp'
+            }
+        }
+        document.write(row + "<br/>")
+    }
+</script>
+</body>
+</html>

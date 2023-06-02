@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let h = +prompt("nhập chiều cao của tam giác ")
+    for (let i = 1; i <= h; i++) {
+        let row = '';
+        let spaces = h - i;
+        let stars = 2 * i - 1;
+
+        for (let j = 0; j < spaces; j++) {
+            row += '&nbsp;';
+        }
+        for (let k = 0; k < stars; k++) {
+            row += '*';
+        }
+        document.write(row + "<br/>");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let  l  = prompt("nhập độ dài mảng")
+    let  a  = []
+    for (let i = 0; i <l ; i++) {
+        a[i]= +prompt("nhập")
+    }
+    let  b  = []
+    let sum = 0
+
+    for (var i = 0; i < a.length; i++) {
+        sum += a[i];
+        b.push(sum);
+
+    }document.write("prefix sums  được tạo ra là : " + b)
+</script>
+</body>
+</html>

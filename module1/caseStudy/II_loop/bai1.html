@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let h = 5
+    for (let i = 0; i < h; i++) {
+        let row = '' + "<br>";
+        for (let j = 0; j < h; j++) {
+            if (i === h - 1 || j === 0 || j === i) {
+                row += '*';
+            } else {
+                row += '&nbsp;' + '&nbsp';
+            }
+        }
+
+        document.write(row + "<br/>");
+    }
+</script>
+</body>
+</html>
