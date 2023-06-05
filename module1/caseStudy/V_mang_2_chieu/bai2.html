@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let row= +prompt('Nhap hang')
+    let col= +prompt('Nhap cot')
+    let array=[];
+    for (let i = 0; i < row ; i++) {
+        array[i]=[];
+        document.write('<br>')
+        for (let j = 0; j < col ; j++) {
+            array[i][j]=Math.floor(Math.random()*10);
+            document.write(array[i][j]+' ')
+        }
+    }
+    function min(array){
+        let minnumber=array[0][0];
+        for (let i = 0; i <array.length ; i++) {
+            for (let j = 0; j < array.length; j++) {
+                if (minnumber>array[i][j]){
+                    minnumber=array[i][j];
+                }
+            }
+        }return minnumber;
+    }
+    function max(array) {
+        let maxnumber=array[0][0];
+        for (let i = 0; i <array.length ; i++) {
+            for (let j = 0; j <array.length ; j++) {
+                if (maxnumber<array[i][j]){
+                    maxnumber=array[i][j]
+                }
+            }
+        }return maxnumber
+    }
+    document.write('<br>'+'So nho nhat trong mang la: ' + min(array));
+    document.write('<br>'+ 'So lon nhat trong mang la: ' + max(array));
+</script>
+</body>
+</html>

@@ -17,7 +17,21 @@
     for (let i = 0 ; i < length2 ; i++) {
         b[i] = +prompt("nhập số nguyên bất kì cho mảng b")
     }
-    let result = b.filter()
+
+    document.write("mảng a có : " + a + "<br>")
+    document.write("mảng b có : " + b)
+    let result = []
+    for (let i = 0; i <b.length ; i++) {
+        let flag = true
+        for (let j = 0; j <a.length ; j++) {
+            if (b[i] === a[j]) {
+                flag = false
+            }
+        }
+        if (flag !== false){
+            result.push(b[i])
+        }
+    }document.write("kết quả là : " + result)
 
 </script>
 </body>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let length  = +prompt("nhập độ dài mảng s1")
+    let s1       = []
+    for (let i = 0; i < length ; i++) {
+        s1[i] = +prompt("nhập số nguyên bất kì cho mảng s1")
+    }
+    let length2 = +prompt("nhập độ dài mảng s2")
+    let s2       = []
+    for (let i = 0 ; i < length2 ; i++) {
+        s2[i] = +prompt("nhập số nguyên bất kì cho mảng s2")
+    }
+    let result = []
+    document.write("mảng s1 có : " + s1 + "<br>")
+    document.write("mảng s2 có : " + s2 + "<br>")
+    for (let i = 0; i <s1.length ; i++) {
+        for (let j = 0; j < s2.length; j++) {
+            if (s1[i] === s2[j] && s1.indexOf(s2[j] != -1)) {
+                result[j] = s2.splice(j, 1);
+            }
+        }
+    }document.write("Có " + result.length + "kí tự chung : " + result)
+
+</script>
+</body>
+</html>

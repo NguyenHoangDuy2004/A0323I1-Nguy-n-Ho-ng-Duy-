@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let length  = +prompt("nhập độ dài mảng a")
+    let a       = []
+    for (let i = 0; i < length ; i++) {
+        a[i] = prompt("nhập kí tự bất kì cho mảng a")
+    }
+    let b       = []
+    document.write("Mảng a có : " + a + "<br>")
+    for (let i = 0; i < a.length ; i++) {
+        if (b.indexOf(a[i]) == -1){
+            b.push(a[i]);
+        }
+    }
+
+    document.write(" Có " + b.length )
+    document.write(" Ký tự khác nhau là: " + b);
+</script>
+</body>
+</html>

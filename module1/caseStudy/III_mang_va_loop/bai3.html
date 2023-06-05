@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let length     = +prompt("nhập độ dài mảng numerators")
+    let numerators = []
+    for (let i = 0; i < length ; i++) {
+        numerators[i] = +prompt("nhập số nguyên bất kì cho mảng a")
+    }
+    let length2      = +prompt("nhập độ dài mảng b")
+    let denominators = []
+    for (let i = 0 ; i < length2 ; i++) {
+        denominators[i] = +prompt("nhập số nguyên bất kì cho mảng b")
+    }
+    document.write("mảng numerators   có : " + numerators   + "<br>")
+    document.write("mảng denominators có : " + denominators + "<br>")
+    let result   = 0
+    let result2  = 0
+    let maxIndex = 0
+    for (let  i  = 0; i < numerators.length ; i++) {
+        result   = numerators[i] / denominators[i]
+        result2  = numerators[maxIndex] / denominators[maxIndex]
+        if(result>result2){
+            maxIndex = i
+        }
+    }
+    document.write("Chỉ số của phân số lớn nhất là: " + maxIndex)
+
+</script>
+</body>
+</html>
