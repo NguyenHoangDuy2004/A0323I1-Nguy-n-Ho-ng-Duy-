@@ -5,6 +5,25 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let str="tRuong  TaN HAI";
+    alert(str);
+    let charArr = str.split("");
+    let array = "";
+    for (let i = 0; i < str.length; i++) {
+        if (charArr[i] !== " ") {
+            if (charArr[i - 1] === " " || i === 0) {
+                array += charArr[i].toUpperCase();
+            } else {
+                array += charArr[i].toLowerCase();
+            }
+        } else {
+            if (charArr[i + 1] !== " ") {
+                array += charArr[i];
+            }
+        }
+    }
+    document.write(array)
+</script>
 </body>
 </html>
