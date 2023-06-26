@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="timSoNguyenTo()">nhập</button>
+<script>
+    function timSoNguyenTo() {
+        let array = +prompt("nhập độ dài mảng")
+        let soNguyenTo = []
+        for (let i = 0; i < array ; i++) {
+            soNguyenTo[i] = +prompt("Nhập 1 số nguyên bất kì")
+            if ( soNguyenTo[i] % 2 !== 0 )
+                document.write(soNguyenTo[i])
+        }
+    }timSoNguyenTo()
+</script>
+</body>
+</html>

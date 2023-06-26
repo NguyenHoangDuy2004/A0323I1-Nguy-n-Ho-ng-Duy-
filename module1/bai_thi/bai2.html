@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="nhap()">Nhập</button>
+<script>
+    function nhap() {
+        let count = 0
+        kiTu = prompt("nhập 1 chuỗi kí tự")
+        for (let i = 0; i <kiTu.length; i++) {
+            if (/[A-Z]/.test(kiTu[i])) {
+                count++
+            }
+          }
+         if (count == 0) {
+             alert("The string is not contain upper char")
+         }else {
+             alert("Số kí tự được viết hoa là : " + count)
+         }
+    }nhap()
+
+
+
+</script>
+</body>
+</html>

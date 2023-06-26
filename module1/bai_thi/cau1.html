@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = []
+    let a = 0
+    let sum1 = 0
+    let b = 0
+    let sum2 = 0
+    let result = 0
+    let length = +prompt("Nhập độ dài mảng ")
+    if (length <= 20 ){
+        for (let i = 0; i < length ; i++) {
+            n[i] = +prompt("Nhập các số nguyên bất kì")
+                if (n % 2 == 0){
+                    sum1 = a + n
+                }else {
+                    sum2 = b + n
+                }
+        }
+    }else {
+        alert("bạn nhập sai")
+    }
+    document.write("Mảng được nhập vào là : "   + n +"<br>")
+    document.write("Tổng của các số chẳn là : " + sum1 +"<br>")
+    document.write("Tổng của các số lẻ là : "   + sum2 +"<br>")
+    document.write("Kết quả sau khi thực hiện là " + (result = (sum1 - sum2)) )
+
+</script>
+</body>
+</html>
